@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <script src="tabs.js" defer></script>
+  <link rel="stylesheet" href="./stylesss.css">
+  <title>Planets facts Earth</title>
+</head>
+<body>
+  <main>
+  <header>
+    <p class="header-logo">The Planets</p>
+    <div onclick="document.getElementById('mobile-nav-menu').style.display='flex'" class="sandwich-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <nav id="earth-desktop-nav-menu" class="desktop-nav-menu">
+          <a class="nav-active" href="./index.html">earth</a>
+          <a href="./venus.html">venus</a>
+          <a href="./earth.html">earth</a>
+          <a href="./mars.html">mars</a>
+          <a href="./jupiter.html">jupiter</a>
+          <a href="./saturn.html">saturn</a>
+          <a href="./uranus.html">uranus</a>
+          <a href="./neptune.html">neptune</a>
+    </nav>
+    
+  </header>
+
+
+  <nav id="mobile-nav-menu" class="mobile-nav-menu">
+    <div class="cancel-mobile-menu">
+      <p id="cancel-button"onclick="document.getElementById('mobile-nav-menu').style.display='none'">X</p></div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-earth" class="mobile-nav-planet"></div>
+        <a href="./index.html">earth</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-venus" class="mobile-nav-planet"></div>
+        <a href="./venus.html">venus</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-earth" class="mobile-nav-planet"></div>
+        <a href="./earth.html">earth</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-mars" class="mobile-nav-planet"></div>
+        <a href="./mars.html">mars</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-jupiter" class="mobile-nav-planet"></div>
+        <a href="./jupiter.html">jupiter</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-saturn" class="mobile-nav-planet"></div>
+        <a href="./saturn.html">saturn</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-uranus" class="mobile-nav-planet"></div>
+        <a href="./uranus.html">uranus</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+    <div id="neptune-no-border"class="mobile-nav-item-container">
+      <div class="display-flex">
+        <div id="mobile-nav-neptune" class="mobile-nav-planet"></div>
+        <a href="./neptune.html">neptune</a>
+      </div>
+      <img src="assets/icon-chevron.svg">
+    </div>
+  </nav>
+
+
+  <div id="earth" class="earth-container">
+    <ul class="tabs">
+      <li data-tab-target="#earth-overview" class="active tab"><h3>Overview</h3></li>
+      <li data-tab-target="#earth-structure" class="tab"><h3>Structure</h3></li>
+      <li data-tab-target="#earth-surface" class="tab"><h3>Surface</h3></li>
+    </ul>
+    
+    <div class="tab-content">
+      <div id="earth-overview" data-tab-content class="active">
+        <div class="tabs-content image-container">
+          <img class="planet-img" src="assets/planet-earth.svg">
+        </div>
+        <div class="content">
+          <h1>Earth</h1>
+          <p>
+            Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.
+          </p>
+          <p>
+            <span>Source : </span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a><img src="assets/icon-source.svg"> 
+          </p>
+        </div>
+      </div>
+      <div id="earth-structure" data-tab-content>
+        <div class="image-container">
+          <img class="planet-img" src="assets/planet-earth-internal.svg">
+        </div>
+        <div class="content">
+          <h1>Earth</h1>
+          <p> Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.</p>
+          <p><span>Source : </span><a href="https://en.wikipedia.org/wiki/Earth#Internal_structure">Wikipedia</a><img src="assets/icon-source.svg"> </p>
+        </div>
+      </div>
+      <div id="earth-surface" data-tab-content>
+        <div class="image-container">
+          <img class="planet-img" src="assets/planet-earth.svg">
+          <img class="surface-img" src="./assets/geology-earth.png">
+        </div>
+        <div class="content">
+          <h1>Earth</h1>
+          <p>
+            The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.
+          </p>
+          <p>
+            <span>Source : </span><a href="https://en.wikipedia.org/wiki/Earth#Surface">Wikipedia</a><img src="assets/icon-source.svg"> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <article class="stat-container">
+      <div class="stat-card">
+        <h4>
+          Rotation Time
+        </h4>
+  
+        <h2>
+          0.99 Days
+        </h2>
+      </div>
+  
+      <div class="stat-card">
+        <h4>
+          Revolution Time
+        </h4>
+        <h2>
+          365.26 Days
+        </h2>
+      </div>
+  
+      <div class="stat-card">
+        <h4>
+          Radius
+        </h4>
+        <h2>
+          6,371 KM
+        </h2>
+      </div>
+  
+      <div class="stat-card">
+        <h4>
+          Average Temp.
+        </h4>
+        <h2>
+          16°c
+        </h2>
+      </div>
+    </article>
+  </footer>
+  </main>
+</body>
+</html>
