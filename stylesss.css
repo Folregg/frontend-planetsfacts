@@ -595,8 +595,32 @@
       gap: 10px;
     }
   }
-  @media (min-width:1000px) {
-    /* Stylings*/
+  @media (max-width: 375px) {
+    main {
+      padding: 10px;
+    }
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    background-color: #ffffff;
+    color: #070724;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  @media (min-width:1023px) {
+  
     h1 {
       font-size: 5rem;
     }
@@ -692,43 +716,4 @@
       width: 450px;
       height: 450px;
      }
-      
-  
-  }
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
-    main {
-      padding: 30px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    main {
-      padding: 20px;
-    }
-  }
-  
-  @media (max-width: 375px) {
-    main {
-      padding: 10px;
-    }
-  }
-  
-  h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .button {
-    background-color: #ffffff;
-    color: #070724;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
   }
