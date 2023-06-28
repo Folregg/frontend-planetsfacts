@@ -31,7 +31,7 @@
     align-items: center;
   }
   
-  /* 1. Universal Stylings */
+  /* Stylings */
   .header-logo {
     font-family: "Antonio";
     font-weight: 700;
@@ -97,11 +97,7 @@
     font-weight: 700;
   }
   
-  
-  
-  
-  /* ============================ Page Layout ============================= */
-  /* ===== Header ===== */
+  /*Header */
   header {
     width: 100%;
     padding: 25px;
@@ -110,7 +106,7 @@
     align-items: center;
     max-width: 500px;
   }
-  /* ===== Desktop Nav ===== */
+  /*Desktop Nav*/
   .desktop-nav-menu {
     width: 100%;
     display: flex;
@@ -160,7 +156,7 @@
     opacity: 100%;
   }
   
-  /* ===== Mobile Nav ===== */
+  /* Mobile Nav */
   .sandwich-menu {
     display: flex;
     flex-direction: column;
@@ -224,7 +220,7 @@
   #neptune-no-border {
     border: none;
   }
-  /* ====================== Individual Planet Colors ================== */
+  /* Planet Colors */
   #mobile-nav-mercury {
     background-color: #DEF4FC;
   }
@@ -252,7 +248,7 @@
   
   
   
-  /* ====== Tabs ======== */
+  /* Tabs*/
   [data-tab-content] {
     display: none;
   }
@@ -334,12 +330,12 @@
     opacity: 100%;
     border-bottom: 4px solid #2D68F0;
   }
-  /* ===== Planet Info Nav ===== */
+  /* Planet Info Nav */
   
   .desktop-tab-container {
     display: none;
   } 
-  /* ======================== Planet Info ========================== */
+  /* Planet Info */
   .content-container {
     display: flex;
     flex-direction: column;
@@ -382,7 +378,7 @@
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.75rem;
   }
-  /* ===== Footer ===== */
+  /* Footer */
   footer {
     width: 100%;
     padding: 25px;
@@ -398,57 +394,50 @@
     margin-bottom: 10px;
   }
   
-  /* ======================= Mercury Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Mercury Page */
   .mercury-container .planet-img {
     width: 111px;
     height: 111px;
   }
   
-  /* ======================= Venus Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Venus Page  */
+
   .venus-container .planet-img {
     width: 154px;
     height: 154px;
   }
   
-  /* ======================= Earth Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Earth Page  */
   .earth-container .planet-img {
     width: 173px;
     height: 173px;
   }
   
-  /* ======================= Mars Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Mars Page  */
   .mars-container .planet-img {
     width: 129px;
     height: 129px;
   }
   
-  /* ======================= Jupiter Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Jupiter Page  */
   .jupiter-container .planet-img {
     width: 224px;
     height: 224px;
   }
   
-  /* ======================= Saturn Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Saturn Page  */
   .saturn-container .planet-img {
     width: 256px;
     height: 256px;
   }
   
-  /* ======================= Uranus Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Uranus Page  */
   .uranus-container .planet-img {
     width: 176px;
     height: 176px;
   }
   
-  /* ======================= Neptune Page ===================== */
-  /* ===== Planet Info ===== */
+  /* Neptune Page  */
   .neptune-container .planet-img {
     width: 173px;
     height: 173px;
@@ -465,11 +454,10 @@
   }
   
   
-  /* Media Queries */
   @media (min-width:625px) {
     
     
-    /* ====================== Stylings ======================= */
+    /* Stylings */
     h1 {
       font-size: 3rem;
     }
@@ -513,7 +501,7 @@
       max-width: 1440px;
     }
   
-    /* ======================= Tabs Styling ====================== */
+    /* Tabs Styling */
     .mobile-info-container {
       display: none;
     }
@@ -541,7 +529,7 @@
     .tabs {
       border-top: none;
     }
-    /* ======================= Planet Image Size ===================== */
+    /* Planet Image Size */
     .image-container {
       height: 440px;
     }
@@ -587,7 +575,7 @@
   
   
   
-    /* ==================== Footer ======================= */
+    /* Footer*/
     footer {
       max-width: 1100px;
   
@@ -608,7 +596,7 @@
     }
   }
   @media (min-width:1000px) {
-    /* ==================== Stylings ===================== */
+    /* Stylings*/
     h1 {
       font-size: 5rem;
     }
@@ -634,7 +622,7 @@
       text-align: left;
     }
   
-    /* ======================= Layout ========================= */
+    /* Layout*/
     .active[data-tab-content] {
       display: flex;
       align-items: center;
@@ -660,7 +648,7 @@
     footer {
       padding: 25px 0px;
     }
-    /* ======================= Planet Image Size ===================== */
+    /* Planet Image Size*/
     .image-container {
       height: 680px;
       width: 680px;
@@ -708,3 +696,39 @@
   
   }
   
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    main {
+      padding: 10px;
+    }
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    background-color: #ffffff;
+    color: #070724;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
